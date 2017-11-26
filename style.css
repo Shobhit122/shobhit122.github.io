@@ -16,13 +16,15 @@ background-color:black;
 	margin:0;
 	opacity:1;
 }
-.cla2 h1
+.zoom
 {
-	font-family:Sketchy;
-	font-size:45px;
+	font-family:Tekton;
+	font-size:65px;
 	color:#ffffff;
 	padding-bottom:0;
 	opacity:1.0;
+	font-weight: bolder;
+	color:#555;
 }
 .cla2 input
 {
@@ -333,6 +335,23 @@ p{
 }
 .netbanking:hover{
 	background:linear-gradient(brown, white);
+	transition-duration: 0.4s;
+	cursor: pointer; 
+}
+.logo{
+	position: relative;
+	top:4px;
+}
+.netbanking1{
+	border:2px solid #555555;
+	border-bottom:none;
+	border-radius: 10px 10px 0px 0px ;
+	background:linear-gradient(#ff0000, white);
+	width:30%;
+	font-weight: bolder;
+}
+.netbanking1:hover{
+	background:linear-gradient(dodgerblue, white);
 	transition-duration: 0.4s;
 	cursor: pointer; 
 }
