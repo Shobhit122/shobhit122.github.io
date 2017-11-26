@@ -324,14 +324,14 @@ p{
 	font-size: 25px;
 	font-family:Tekton;
 }
-.net{
+.netbanking{
 	border:2px solid #555555;
 	border-bottom:none;
 	border-radius: 10px 10px 0px 0px ;
 	background:linear-gradient(grey, white);
 	width:30%;
 }
-.net:hover{
+.netbanking:hover{
 	background:linear-gradient(brown, white);
 	transition-duration: 0.4s;
 	cursor: pointer; 
