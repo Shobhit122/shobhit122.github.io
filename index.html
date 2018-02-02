@@ -1,47 +1,203 @@
 <html>
-<html>
 <head>
-<title>Zoom Bank</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+var i=0;
+var k=0;
+function disp()
+{	
+	var	imge=["goku.png","ken.png","light.png","lelouch.png","naruto.png"]
+	img1.src=imge[i];
+	if (i<imge.length - 1)
+	i++;
+	else i=0;
+	
+	setTimeout("disp()",2500);
+	
+	var	imgf=["dbs.png","tg.png","dn.png","cg.png","ns.png"]
+	img2.src=imgf[k];
+	if (k<imgf.length - 1)
+	k++;
+	else k=0;
+	
+	setTimeout("disp1()",2500);
+}
+
+window.onload=disp;
+</script>
+
+<style>
+*{
+	margin:0px;
+}
+.h11{
+		background:#3E2D7D;
+		height:120px;
+}
+.h11 h1{
+	font-family:sketchy;
+	color:white;
+	font-weight:lighter;
+	font-size:60px;
+	padding-top:20px;
+}
+body{
+background-color:#dee;
+height:1000px;
+}
+.img1{
+	
+	margin:0px;
+	background:#3E2D7D;
+	position: absolute;
+	z-index: +1;
+	
+}
+.watch{
+	font-family: nunito light;
+	font-size:39.6px;
+	float:right;
+	padding-top: 40px;
+	padding-right: 60px;
+	color:white;
+}
+.tag{
+	font-family: nunito light;
+	font-size:15px;
+	right: 0px;
+	padding-top: 90px;
+	padding-right: 60px;
+	position:absolute;
+	color:white;
+
+}
+.home{
+	background-color: #3E2D7D;
+	height:550px;
+}
+#stream{
+	font-family: Tekton;
+	font-size:20px;
+	right: 0px;
+	padding-top: 300px;
+	padding-right: 60px;
+	position:absolute;
+	color:white;
+
+
+}
+.abc:hover{
+	border-bottom:none;
+}
+.anim{
+	float:right;
+	font-family:Tekton;
+	color:white;
+	position:relative;
+	margin-top:20%;
+	left:28%;
+	font-size:20px;
+	
+}
+
+*{margin:0px;}
+.footer{
+	background-color:black;	
+	height:230px;
+	width:100%;
+	overflow:ato;
+	position:absolute;
+	top:270%;
+	}
+.postfooter{
+	float:right;
+	height:190px;
+	padding-top:20px;
+	padding-right:50px;
+	padding-left:0px;
+	opacity:0.8;
+	}
+.logfoot{
+	height:27%;
+	cursor:pointer;
+	margin:10px;
+	opacity:0.5;
+	}
+.logfoot:hover{	
+	opacity:1;	
+	cursor:pointer;
+	transition-duration:0.2s;
+	}
+.logofoot{
+	height:80%;
+	cursor:pointer;	
+	margin-left:50px;
+	float:left;
+	}
+.footerul{
+	color:#999;
+	list-style:circle;
+	font-size:15px;
+	font-family:nunito;
+	margin-left:10%;
+	float:left;
+	}
+.footerul li:hover{
+	cursor:pointer;
+	color:white;
+	transition-duration:0.5s;
+	font-size:15.1px;
+	}
+p{
+	color:#008CBA;
+	padding-top:30px;
+	padding-right:50px;
+	font-size:18px;
+	font-family:calibri;
+	float:right;
+	margin-right:100px;
+	width:40%;
+	}	
+
+	.dn ,.dbs{
+			height:430px;
+			width:266.66px;
+			text-align: center;
+			box-shadow: 0px 16px 25px 0px rgba(0,0,0,0.2);
+			font-family: Nunito light;
+			float:left;
+			margin-left: 50px;
+			border:2px solid rgba(0,0,0,0.5);
+			border-radius: 5px;
+			margin-bottom:5%;
+		}
+		.dn:hover , .dbs:hover{
+			 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+			 transition:0.2s;
+		}
+		.dn h4 , .dbs h4{
+			margin-top: 3px;
+		}
+
+</style>
 </head>
 <body>
-<div class="cla1">
-<div class="cla2">
-
+<div class="h11">
 <center>
-								<pre>
-								<span class="sx"><u>Personal</u></span>	<span class="sx"><u>Business</u></span>	<span class="sx"><u>About Us</u></span>	<span class="sx"> <u>Get Support</u>      </span><span class="sx"><u>Locate Us</u></span>  	  <span class="sx"><u>Check Rates</u></span>	   <span class="sx"><u>Notification</u></span>	
-								</pre>
-<img src="graph.JPG" width="50px" height="50px" class="logo">&nbsp;&nbsp;&nbsp;
-<font class="zoom">Zoom Bank</font><br>
-	<input type="textbox" placeholder="What are you looking for ?">&nbsp;&nbsp;&nbsp;&nbsp; <button>Search</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button>Log In</button> 
-		<br><br>
-<div>
-	<ul>
-	<li><a href="index.html">Home</a></li>
-	<li class="dropdown">
-    <a href="#" class="dropbtn">Loans</a>
-    <div class="dropdown-content">
-      <a href="ploan.html">Personal Loan</a>
-      <a href="hloan.html">Home Loan</a>
-      <a href="#">Car Loan</a>
-	  <a href="#">Educational Loan</a>
-    </div>
-</li>
-<li class="dropdown">
-    <a href="#" class="dropbtn">Open Account</a>
-    <div class="dropdown-content">
-      <a href="form.html">Savings Account</a>
-      <a href="form.html">Current Acount</a>
-      <a href="form.html">NRI Account</a>
-	  <a href="form.html">Other</a>
-    </div>
-</li>
-	<li><a href="netbank.html">Net Banking</a></li>
-	<li><a href="#">Link with Aadhar</a></li>
-	<li><a href="#">Make Payments</a></li>
-	<li><a href="#">Progress With Us</a></li>
-	
+<img src="animelab.png" height="100px" width="300px" style="float:left;">
+</center>
+</div>
+<div class="home">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="" name="img1" class="img1 fade" height="550px" width="456px">
+<br>
+<br>
+ 
+<font class="watch"> Watch Latest Anime !!</font>
+<font><pre class="tag">Thousands of episodes now streaming for free. Download 
+or Start watching instantly.
+</pre></font>
+<img class="anim" height="110px" width="250px" src="" name="img2">
+</div>
 
   
 </ul>	
@@ -49,27 +205,81 @@
 </div>
 </div>
 </div>
-<img src="p11.jpg" height="310px" width="685px" class="pig">
-<div class="log">
-<center>
-<h1>Login</h1>
-<form class="f1">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" placeholder="Enter E-mail"><br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="Password"><br><br>
-<a href="#"><button class="bt">Login</button></a>
-</div>
-<center>
-<img src="pooloo.JPG" height="300" width="100%">
-<br>
-<br>
-<br>
-<img src="gaadi.JPG" height="300" width="100%">
-<br>
-<br>
-</center>
+<br><br>
 
+	<a href="deathnote.html">
+	<div class="dn">
+		<img src="dnposter.jpg" height="400px" width="266.66px">
+		<h4>Death Note</h4> 
+	</div>
+	</a>
+	<a href="dbsuper.html">
+	<div class="dbs">
+		<img src="dbsposter.jpg" height="400px" width="266.66px">
+		<h4>Dragon Ball Super</h4> 
+	</div>
+	</a>
+	<a href="tokyoghoul.html">
+	<div class="dbs">
+		<img src="tgposter.jpg" height="400px" width="266.66px">
+		<h4>Tokyo Ghoul</h4> 
+	</div>
+	</a>
+	<a href="deathnote.html">
+	<div class="dbs">
+		<img src="sgposter.jpg" height="400px" width="266.66px">
+		<h4>Steins Gate</h4> 
+	</div>
+	</a>
+	<br>
+	<a href="deathnote.html">
+	<div class="dbs">
+		<img src="aposter.jpg" height="400px" width="266.66px">
+		<h4>Another</h4> 
+	</div>
+	</a>
+	<a href="codegeass.html">
+	<div class="dbs">
+		<img src="cgposter.jpg" height="400px" width="266.66px">
+		<h4>Code Geass</h4> 
+	</div>
+	</a>
+	<a href="deathnote.html">
+	<div class="dbs">
+		<img src="mnposter.jpg" height="400px" width="266.66px">
+		<h4>The Future Diary</h4> 
+	</div>
+	</a>
+	<a href="naruto.html">
+	<div class="dbs">
+		<img src="nsposter.jpg" height="400px" width="266.66px">
+		<h4>Naruto Shippuden</h4> 
+	</div>
+	</a>
+
+
+<br>
+
+
+<div class="footer">
+<img src="shen.png" class="postfooter">
+<br>
+<img src="p4.png" class="logofoot">
+<br>
+<br>
+<br>
+<ul class="footerul">
+	<li>REQUEST
+	<li>PREMIUM
+	<li>CATEGORIES
+	<li>CONTACT
+	<li>FAQ
+</ul>
 <center>
-<div class="dx">
-<pre>
-		<span id="dy">Copyright 2017 Zoom Bank  All Rights Reserved					<a href="#">Disclamier</a> | <a href="#">Privacy Policy</a> | <a href="#">Code Of Commitment</a></span>
-		</div>
+<img src="p1.png" class="logfoot">
+<img src="p2.png" class="logfoot">
+<img src="p3.png" class="logfoot">
+<img src="p5.png" class="logfoot">
+</center>
+</div>
+
