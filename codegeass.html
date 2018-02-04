@@ -1,18 +1,23 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="stylex.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 <body>
 <div class="topbar">
 <br>
     <ul>
-        <a href="index.html"><img src="p4.png" height="18%"></a>
-        <li><a href="how it works.html">GENRES</a></li>
+        <a href="index.html"><img src="p4.png" height="18%" class="alicon"></a>
+        <li><a href="#.html">GENRES</a></li>
         <li class="dropdown">
-        <a href="#">TOP 10</a></li>
-        <li class="dropdown">
-        <a href="#">MOST WATCHED</a></li>
-        <li><a href="#">TOP RATED</a></li>
+        <a href="#" class="dropbtn">TOP 10</a>
+		<div class="dropdown-content">
+			<a href="deathnote.html">Deathnote</a>
+			<a href="tokyoghoul.html">Tokyo Ghoul</a>
+			<a href="dbsuper.html">Dragon Ball Super</a>
+		</div>
+        <li><a href="#">MOST WATCHED</a></li>
+        <li><a href="toprate.html">TOP RATED</a></li>
 		<li><a href="#">MOST POPULAR</a></li>
         <li><a href="#">AL PREMIUM</a></li>
     </ul>   
@@ -33,51 +38,118 @@ Lelouch Lamperouge, exiled prince of Britannia, unfortunately finds himself caug
 <br><br><br><br>
 
 <div id="myModal" class="modal">
-  <span class="close">&times;</span>
+
   <div class="modal-content">
-  <center>
-<iframe width="840" height="547.5" src="https://www.youtube.com/embed/O9Rdqm_74C0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <span class="close">&times;</span>
+    <center>
+    	<iframe src="https://www.youtube.com/embed/O9Rdqm_74C0?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen class="mode"></iframe>
+</center>
   </div>
 
 </div>
 
 
 <script>
-var modal = document.getElementById('myModal');
+//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
 
-var btn = document.getElementById("myBtn");
+// Get the modal
 
-var span = document.getElementsByClassName("close")[0];
+        var modal = document.getElementById('myModal');
 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// Get the <span> element that closes the modal
+        var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+// When the user clicks on the button, open the modal
+
+        btn.onclick = function() {
+
+            modal.style.display = "block";
+        }
+
+// When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+
+
+  // Get the modal
+
+        var modalparent = document.getElementsByClassName("modal_multi");
+
+        // Get the button that opens the modal
+
+        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+        // Get the <span> element that closes the modal
+        var span_close_multi = document.getElementsByClassName("close_multi");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function() {
+
+            setDataIndex();
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+
+            // OLD CODE
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
 </script>
-
 <div class="d5">
 		<br>
 	<center>
+	
 	<div class="d51">
 		<div class="d511">
 			<img src="waton.png" height="85%">
 			</div>
 			DOWNLOAD EPISODES
 		</div>
+	
+	
 	<div class="d51">
 		<div class="d511">
 			<img src="mag.png" height="90%">
 			</div>
-			DIRECT DOWNLOAD
+			TORRENT DOWNLOAD
 		</div>
 	<div class="d51">
 		<div class="d511">
@@ -93,3 +165,5 @@ window.onclick = function(event) {
 		</div>
 	</center>	
 </div>
+
+		
