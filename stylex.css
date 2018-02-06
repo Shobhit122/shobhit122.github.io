@@ -138,11 +138,12 @@ body{
     margin: auto;
     padding: 20px; 
 	width:60%;
+	margin-top:-50px;
 }
 
 .close {
     color: #aaaaaa;
-    margin-left:100%;
+    margin-left:90%;
     font-size: 38px;
     font-weight: bolder;
 	font-family:tekton;
@@ -192,12 +193,12 @@ body{
 	user-select:none;
 }
 table{
-		cursor:pointer;
+		cursor:points;
 		width:100%;
 		font-family:tekton;
 		font-size:33px;
 		background:#02CCBA;
-		padding;0px; 
+		padding;0px;
 		color:black;
 		}
 table th{
@@ -258,7 +259,6 @@ table tr:hover{
 	font-size:15px;
 	font-family:nunito;
 	margin-left:%;
-	fl
 	}
 .footerul li:hover{
 	text-decoration:underline;
@@ -316,9 +316,30 @@ table tr:hover{
 }	
 
 
+.myBtn_multi{
+	border:none;
+	padding:7px 55px;
+	font-size:20px;
+	cursor:pointer;
+	background-color:#02B3E4;
+	border-radius:5px;
+	box-shadow:6px 6px 10px rgba(0,0,0,0.3);
+	transition-duration:0.4s;
+}
+
+.epitrcc:hover{
+	background-color:#02ccba;
+}
+.epitrcc1:hover{
+	background-color:#a97fcd;
+}
 
 
-
-
-
-
+.myBtn_multi:hover{
+				background-color:#01a2d3;
+				box-shadow:4px 4px 4px rgba(0,0,0,0.1);
+				transition-duration:0.4s;
+				cursor:pointer;
+				font-size:20px;
+				
+				}

@@ -1,7 +1,61 @@
 <html>
 <head>
-	<title>Code Geass</title>
 <link rel="stylesheet" type="text/css" href="stylex.css">
+<style>
+/* The Modal (background) */
+.modala {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contenta {
+    margin: auto;
+    padding: 20px;
+	width:60%;
+	background-color: #fefefe;
+}
+
+/* The Close Button */
+.closea{
+    color: #dddddd;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+	margin-top:-10%;
+	margin-right:%;
+	font-family:tekton;
+}
+
+.closea:hover,
+.closea:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+	transition:0.3s;
+}
+.imgaaa{
+	float:right;
+	position:relative;
+	bottom:30px;
+	cursor:pointer;
+	margin-right:80px;
+}
+.episodes{
+	color:black;
+	font-family:tekton;
+	font-weight:light;
+}
+</style>
 </head>
 <body>
 <div class="topbar">
@@ -10,11 +64,13 @@
         <a href="index.html"><img src="p4.png" height="18%" class="alicon"></a>
         <li><a href="#.html">GENRES</a></li>
         <li class="dropdown">
-        <a href="#" class="dropbtn">TOP 10</a>
+        <a href="#" class="dropbtn">TOP 5</a>
 		<div class="dropdown-content">
 			<a href="deathnote.html">Deathnote</a>
 			<a href="tokyoghoul.html">Tokyo Ghoul</a>
 			<a href="dbsuper.html">Dragon Ball Super</a>
+			<a href="OnePunchMan.html">One Punch Man</a>
+			<a href="tokyoghoul.html">Code Geass</a>
 		</div>
         <li><a href="#">MOST WATCHED</a></li>
         <li><a href="toprate.html">TOP RATED</a></li>
@@ -22,8 +78,7 @@
         <li><a href="#">AL PREMIUM</a></li>
     </ul>   
         <br><br>        
-</div>
-<img src="codegeass.jpg" class="commonpost">
+</div><img src="codegeass.jpg" class="commonpost">
 
 <div class="d1">
 <p class="commonintro" align="justify">
@@ -49,7 +104,113 @@ Lelouch Lamperouge, exiled prince of Britannia, unfortunately finds himself caug
 </div>
 
 
-<script>
+
+<div class="d5">
+		<br>
+	<center>
+	<div class="d51">
+		<div class="d511">
+			<img src="waton.png" height="85%">
+			</div>
+			<a class="myBtn_multi1">DOWNLOAD EPISODES</a>
+		</div>
+	</center>
+		
+		 <!-- The Modal -->
+    <div class="modala modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-contenta">
+            <span class="closea close_multi">&times;</span>
+            <div class="episodes">Download 720p :</div><a href="Code Geass Lelouch of Rebellion R1 [720p].torrent"><img src="downl.png" width="4%" class="imgaaa"></a><br>
+		<div class="episodes">Download 1080p :</div><a href="Code Geass Lelouch of Rebellion R1 [1080p].torrent"><img src="downl.png" width="4%"class="imgaaa"></a>
+        </div>
+
+    </div>
+	
+	<div class="d51">
+	<center>
+		<div class="d511">
+			<img src="mag.png" height="90%">
+			</div>
+			DIRECT DOWNLOAD
+	</center>
+		</div>
+	<div class="d51">
+	<center>
+		<div class="d511">
+		
+			<img src="down.png" height="90%">
+			</div>
+			WATCH ONLINE
+	</center>		
+	</div>
+		
+	<div class="d51">
+	<center>
+		<div class="d511">
+			<img src="magn.png" height="85%">
+			</div>	
+			FIND RELATED ANIME
+		</div>
+	</center>	
+</div>
+	<script>
+      // Get the modal
+
+        var modalparent = document.getElementsByClassName("modal_multi");
+
+        // Get the button that opens the modal
+
+        var modal_btn_multi = document.getElementsByClassName("myBtn_multi1");
+
+        // Get the <span> element that closes the modal
+        var span_close_multi = document.getElementsByClassName("close_multi");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function() {
+
+            setDataIndex();
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+
+            // OLD CODE
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
 //XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
 
 // Get the modal
@@ -75,39 +236,6 @@ Lelouch Lamperouge, exiled prince of Britannia, unfortunately finds himself caug
         }
 
 
+
+
 </script>
-<div class="d5">
-		<br>
-	<center>
-	
-	<div class="d51">
-		<div class="d511">
-			<img src="waton.png" height="85%">
-			</div>
-			DOWNLOAD EPISODES
-		</div>
-	
-	
-	<div class="d51">
-		<div class="d511">
-			<img src="mag.png" height="90%">
-			</div>
-			TORRENT DOWNLOAD
-		</div>
-	<div class="d51">
-		<div class="d511">
-			<img src="down.png" height="90%">
-			</div>
-			WATCH ONLINE
-		</div>
-	<div class="d51">
-		<div class="d511">
-			<img src="magn.png" height="85%">
-			</div>	
-			FIND RELATED ANIME
-		</div>
-	</center>	
-</div>
-
-
-	

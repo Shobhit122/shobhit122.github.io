@@ -21,7 +21,6 @@ function disp()
 	
 	setTimeout("disp1()",2500);
 }
-
 window.onload=disp;
 </script>
 
@@ -41,8 +40,8 @@ window.onload=disp;
 	padding-top:20px;
 }
 body{
-background-color:#dee;
-height:1000px;
+		background:url(f1.png);
+	background-color:#A97FCD;
 }
 .img1{
 	
@@ -68,7 +67,6 @@ height:1000px;
 	padding-right: 60px;
 	position:absolute;
 	color:white;
-
 }
 .home{
 	background-color: #3E2D7D;
@@ -82,8 +80,6 @@ height:1000px;
 	padding-right: 60px;
 	position:absolute;
 	color:white;
-
-
 }
 .abc:hover{
 	border-bottom:none;
@@ -98,7 +94,6 @@ height:1000px;
 	font-size:20px;
 	
 }
-
 *{margin:0px;}
 .footer{
 	background-color:black;	
@@ -157,27 +152,61 @@ p{
 	margin-right:100px;
 	width:40%;
 	}	
+.dbs{
+	height:430px;
+	width:266.66px;
+	text-align: center;
+	box-shadow: 0px 16px 25px 0px rgba(0,0,0,0.2);
+	font-family: Nunito light;
+	float:left;
+	margin-left: 50px;
+	border-radius: 5px;
+	margin-bottom:5%;
+	color:white;
+		}
+.dbs:hover{
+	 box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
+	 transition:0.3s;
+	 transition-delay:0.1s;
+		}
+.dbs h4{
+	background-color:#02CCBA;
+	padding-bottom:8px;
+		}
+		
+		
+		
+.dbs{
+	perspective: 1000px;
+}
+	.dbs:hover .flipper, .dbs.hover .flipper {
+		transform: rotateY(180deg);
+	}
 
-	.dn ,.dbs{
-			height:430px;
-			width:266.66px;
-			text-align: center;
-			box-shadow: 0px 16px 25px 0px rgba(0,0,0,0.2);
-			font-family: Nunito light;
-			float:left;
-			margin-left: 50px;
-			border:2px solid rgba(0,0,0,0.5);
-			border-radius: 5px;
-			margin-bottom:5%;
-		}
-		.dn:hover , .dbs:hover{
-			 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-			 transition:0.2s;
-		}
-		.dn h4 , .dbs h4{
-			margin-top: 3px;
-		}
+.flipper {
+	transition: 0.4s;
+	transform-style: preserve-3d;
 
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}			
 </style>
 </head>
 <body>
@@ -208,53 +237,165 @@ or Start watching instantly.
 <br><br>
 
 	<a href="deathnote.html">
-	<div class="dn">
+	<div class="dbs">
+	
+		<div class="flipper">
+		<div class="front">
+	
 		<img src="dnposter.jpg" height="400px" width="266.66px">
 		<h4>Death Note</h4> 
 	</div>
+	
+	<div class="back">
+		
+		<img src="dnposter.jpg" height="400px" width="266.66px">
+		<h4>AL Rating: 9.0</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
+	
 	<a href="dbsuper.html">
 	<div class="dbs">
+	
+		<div class="flipper">
+		<div class="front">
+	
 		<img src="dbsposter.jpg" height="400px" width="266.66px">
 		<h4>Dragon Ball Super</h4> 
 	</div>
+	
+	<div class="back">
+		
+		<img src="dbsposter.jpg" height="400px" width="266.66px">
+		<h4>AL Rating: 8.3</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
+	
 	<a href="tokyoghoul.html">
 	<div class="dbs">
+	
+		<div class="flipper">
+		<div class="front">
+	
 		<img src="tgposter.jpg" height="400px" width="266.66px">
 		<h4>Tokyo Ghoul</h4> 
 	</div>
+	
+	<div class="back">
+		
+		<img src="tgposter.jpg" height="400px" width="266.66px">
+		<h4>AL Rating: 8.7</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
+	
 	<a href="steinsgate.html">
 	<div class="dbs">
+	
+		<div class="flipper">
+		<div class="front">
+		
 		<img src="sgposter.jpg" height="400px" width="266.66px">
 		<h4>Steins Gate</h4> 
 	</div>
+	
+	<div class="back">
+		
+		<img src="sgposter.jpg" height="400px" width="266.66px">
+		<h4>AL Rating: 8.6</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
-	<br>
+	
+<br>
+	
 	<a href="deathnote.html">
 	<div class="dbs">
+	
+		<div class="flipper">
+		<div class="front">
+	
 		<img src="aposter.jpg" height="400px" width="266.66px">
 		<h4>Another</h4> 
 	</div>
+	
+	<div class="back">
+		
+		<img src="aposter.jpg" height="400px" width="266.66px">
+		<h4>AL Rating: 8.4</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
+	
 	<a href="codegeass.html">
 	<div class="dbs">
+		
+		<div class="flipper">
+		<div class="front">
+		
 		<img src="cgposter.JPG" height="400px" width="266.66px">
 		<h4>Code Geass</h4> 
 	</div>
+	
+		<div class="back">
+		
+		<img src="cgposter.JPG" height="400px" width="266.66px">
+		<h4>AL Rating: 8.7</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
+	
 	<a href="mirrai nikki.html">
 	<div class="dbs">
+	
+		<div class="flipper">
+		<div class="front">
+	
 		<img src="mnposter.jpg" height="400px" width="266.66px">
 		<h4>The Future Diary</h4> 
 	</div>
+	
+	<div class="back">
+		
+		<img src="mnposter.jpg" height="400px" width="266.66px">
+		<h4>AL Rating: 8.3</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
+	
 	<a href="naruto.html">
 	<div class="dbs">
+	
+		<div class="flipper">
+		<div class="front">
+	
 		<img src="nsposter.jpg" height="400px" width="266.66px">
 		<h4>Naruto Shippuden</h4> 
 	</div>
+	
+	<div class="back">
+		
+		<img src="nsposter.jpg" height="400px" width="266.66px">
+		<h4>AL Rating: 8.2</h4> 
+	</div>
+	
+</div>	
+</div>
 	</a>
 
 
@@ -282,4 +423,3 @@ or Start watching instantly.
 <img src="p5.png" class="logfoot">
 </center>
 </div>
-
